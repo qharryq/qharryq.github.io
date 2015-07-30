@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,200);
+
+body {
+    color: #7f8c8d;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-transition:0.02s;
+    font-weight: 200;
+}
+
+header {
+    
+    #intro {
+            padding-top: 5%;
+        
+            h1 {
+                font-family: 'Open Sans', sans-serif;
+                -webkit-font-smoothing: antialiased !important;
+                -webkit-transition:0.02s;
+                font-weight: 200;
+                font-size: 32px;
+                color: #7f8c8d;
+            }
+    }
+}
+
+#icons {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#nav {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #008CBA; 
+}
+
+.name img { //rounds image
+height: 70px;
+width: 70px;
+-moz-border-radius: 35px; //for firefox support
+border-radius: 35px;
+}
+
