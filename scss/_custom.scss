@@ -1,44 +1,162 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,200);
-
 body {
     color: #7f8c8d;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased !important;
-    -webkit-transition:0.02s;
+    -webkit-transition: 0.02s;
     font-weight: 200;
 }
 
 header {
-    
     #intro {
-            padding-top: 5%;
-        
-            h1 {
-                font-family: 'Open Sans', sans-serif;
-                -webkit-font-smoothing: antialiased !important;
-                -webkit-transition:0.02s;
-                font-weight: 200;
-                font-size: 32px;
-                color: #7f8c8d;
-            }
+        padding-top: 5%;
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            -webkit-font-smoothing: antialiased !important;
+            -webkit-transition: 0.02s;
+            font-weight: 200;
+            font-size: 32px;
+            color: #7f8c8d;
+        }
     }
 }
 
 #icons {
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 50%;
 }
 
 #nav {
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #008CBA; 
+    border-bottom-color: #008CBA;
 }
 
-.name img { //rounds image
-height: 70px;
-width: 70px;
--moz-border-radius: 35px; //for firefox support
-border-radius: 35px;
+.name img {
+    //rounds image
+    height: 70px;
+    width: 70px;
+    -moz-border-radius: 35px; //for firefox support
+    border-radius: 35px;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.skrollr-desktop body {
+    height: 100% !important;
+}
+
+.parallax-image-wrapper {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-image-wrapper-50 {
+    height: 50%;
+    top: -50%;
+}
+
+.parallax-image-wrapper-100 {
+    height: 100%;
+    top: -100%;
+}
+
+.parallax-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-image-50 {
+    height: 200%;
+    top: -50%;
+}
+
+.parallax-image-100 {
+    height: 100%;
+    top: 0;
+}
+
+.parallax-image.skrollable-between {
+    display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display: none !important;
+}
+
+#skrollr-body {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.gap {
+    background: transparent center no-repeat;
+    background-size: cover;
+}
+
+.skrollr .gap {
+    background: transparent !important;
+}
+
+.gap-50 {
+    height: 50%;
+}
+
+.gap-100 {
+    height: 100%;
+}
+
+.header,
+.content {
+    background: #fff;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content-full {
+    height: 100%;
+}
+
+#done {
+    height: 100%;
+}
+
+#skills {
+    .skillsintro {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 20px;
+        color: #008CBA;
+    }
+    h1 {
+        font-size: 100px;
+        font-weight: 200;
+        padding-top: 5%;
+    }
+    img {
+        padding-bottom: 20%;
+    }
+    p {
+        font-size: 30px;
+        //color: #008CBA;
+    }
+}
